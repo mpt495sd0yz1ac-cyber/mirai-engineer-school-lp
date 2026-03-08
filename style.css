@@ -8,7 +8,44 @@ body {
     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
 }
 
+/*ヒーロ－セクション*/
+.hero {
+    position: relative;
+}
+
+/*メイン画像*/
 .main-image {
     width: 100%;
 }
+
+/*未経験から手に職をつける第一歩。の文字*/
+.main-title {
+    color: #ffffff;  
+    position: absolute;
+    top: 3%;  
+    left: 3%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/*3ヶ月でWebエンジニアを目指す プログラミングスクールの文字*/
+.sub-title {
+    color: #374151;    
+}
+
+/*「無料相談はこちら」のCTAボタン*/
+.cta-button {
+    background: #2563EB;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* マウスを乗せたときの色 */
+.cta-button:hover {
+    background: #1D4ED8;
+}
+
 }

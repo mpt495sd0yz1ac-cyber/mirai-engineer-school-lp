@@ -11,6 +11,7 @@ body {
 /*ヒーロ－セクション*/
 .hero {
     position: relative;
+    margin-bottom: 50px;
 }
 
 /*メイン画像*/
@@ -65,12 +66,56 @@ body {
     background: #1D4ED8;
 }
 
+/* 「※オンライン対応・・」の文字 */
 .cta-note {
     top: 50%;  
     left: 3%; 
     color: #fff;
     margin: 6px 0 0 0 ;
-    
+}
+
+/*共感セクション全体 */
+.problem{
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+/*タイトルとリストと画像*/
+.problem-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*共感セクションのタイトル*/
+.section-title {
+    text-align: center;
+    margin-bottom:40px;
+    font-size: 40px;
+}
+
+/*リストの文字*/
+.problem-list li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+/*リストの前にチェックマークを表示*/
+.problem-list li::before{
+  content: "✔";
+  color: #2563EB;
+  margin-right: 8px;
+}
+
+/*リストと画像*/
+.problem-content {
+  display:flex;
+  align-items:center;
+  gap:100px;
+}
+
+.problem-image{
+  width:500px;
+  border-radius:8px;
 }
 
 }

@@ -2,7 +2,7 @@
 @media screen and (min-width:1024px) {
 body {
     margin: 0;
-    background: #F1F5F9;
+    background: #b8cfe6;
     position: relative;
     width: 100%;
     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
@@ -166,6 +166,60 @@ body {
   margin-right: 8px;
 }
 
+/*カリキュラム全体*/
+.curriculum {
+  background: #ffffff;
+  margin-bottom: 50px;
+  padding: 20px 0;
+}
+
+/*カリキュラムのタイトル*/
+.curriculum-title {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+}
+
+/*カリキュラムリスト*/
+.curriculum-list {
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*各STEP*/
+.curriculum-item {
+  background: #ece8e8;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/*STEPの文字*/
+.curriculum-item .step {
+  font-weight: bold;
+  color:#2563EB;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/*STEPの下の文字*/
+.curriculum-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/*STEPの2つ目の下の文字*/
+.curriculum-item p:not(.step) {
+  font-size: 15px;
+  color: #555;
+}
 
 
 }

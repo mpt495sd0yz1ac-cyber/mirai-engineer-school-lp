@@ -221,5 +221,105 @@ body {
   color: #555;
 }
 
+/* セクション */
+.price {
+  background: #e2edfd;
+  padding: 80px 20px;
+}
+
+/* 料金セクションの内側コンテナ（中央寄せ＋横幅制御） */
+.price-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* タイトル */
+.price-title {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+/* 料金システム(横並び) */
+.price-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* カード */
+.price-item {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+/* おすすめの外枠 */
+.recommend {
+  border: 2px solid #2563EB;
+}
+
+/* おすすめの文字 */
+.badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563EB;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+/* 価格 */
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+/* プラン別の説明 */
+.desc {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* プランのリスト */
+.plan-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* プランのリストの内容 */
+.plan-list li {
+  margin-bottom: 8px;
+}
+
+/* プランのリストチェック */
+.plan-list li::before {
+  content: "✔";
+  color: #2563EB;
+  margin-right: 8px;
+}
+
+/* ボタン */
+.price-button {
+  display: inline-block;
+  background: #2563EB;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ホバー */
+.price-button:hover {
+  background: #1D4ED8;
+}
 
 }

@@ -221,10 +221,11 @@ body {
   color: #555;
 }
 
-/* セクション */
+/* 料金プランセクション */
 .price {
   background: #e2edfd;
   padding: 80px 20px;
+  margin-bottom: 50px;
 }
 
 /* 料金セクションの内側コンテナ（中央寄せ＋横幅制御） */
@@ -256,9 +257,27 @@ body {
   position: relative;
 }
 
+/*ホバー*/
+.price-item:hover {
+  transform: translateY(-5px);
+}
+
 /* おすすめの外枠 */
 .recommend {
+  background: #f0f7ff;
   border: 2px solid #2563EB;
+  transform: translateY(-12px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/*スタンダードプランのカード全体*/
+.recommend:hover {
+  transform: translateY(-15px);
+}
+
+/*スタンダードプランの料金の文字*/
+.recommend .price-amount {
+  font-size: 32px;
 }
 
 /* おすすめの文字 */
@@ -275,8 +294,8 @@ body {
 }
 
 /* 価格 */
-.price {
-  font-size: 24px;
+.price-amount {
+  font-size: 28px;
   font-weight: bold;
   margin: 15px 0;
 }

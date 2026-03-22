@@ -341,4 +341,69 @@ body {
   background: #1D4ED8;
 }
 
+/* 受講生の声セクション */
+.voice {
+  background: #f9fbff;
+  padding: 80px 20px;
+}
+
+/* 内側 */
+.voice-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* タイトル */
+.voice-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* サブタイトル */
+.voice-subtitle {
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* リスト */
+.voice-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* カード */
+.voice-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* 画像 */
+.voice-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* 名前・属性 */
+.voice-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 口コミ */
+.voice-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
 }

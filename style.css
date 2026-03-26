@@ -1,12 +1,28 @@
 /*PCサイズ*/
 @media screen and (min-width:1024px) {
-body {
+/* ===== ベース（全体設定） ===== */
+  body {
     margin: 0;
     background: #b8cfe6;
     position: relative;
     width: 100%;
     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
 }
+
+/* ===== 共通アニメーション ===== */
+/* スクロール時にふわっと表示するフェードイン用 */
+.fade-in {
+  opacity: 0;   /* 初期状態は透明 */
+  transform: translateY(30px);  /* 少し下にずらす */
+  transition: 0.6s;  /* なめらかに変化 */
+}
+
+/* 表示状態（JSで.showが付いたとき） */
+.fade-in.show {
+  opacity: 1;   /* 表示する */
+  transform: translateY(0);   /* 表示する */
+}
+/* ===== 共通アニメーション ===== */
 
 /*ヒーロ－セクション*/
 .hero {
@@ -51,7 +67,7 @@ body {
 }
 
 /*「無料相談はこちら」のCTAボタン*/
-.cta-button{
+.contact-button{
   background: #2563EB;
   color: #fff;
   padding: 15px 30px;
@@ -428,12 +444,33 @@ body {
 .faq-question {
   font-weight: bold;
   color: #2563EB;
-  font-size: 18px;      /* ← 少し大きく */
+  font-size: 18px;
+  background: #e5e7eb;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question:hover {
+  background: #d1d5db;
+}
+
+/*+ボタン*/
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
 }
 
 /* 回答 */
 .faq-answer {
   display: none;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
 
 .faq-answer.open {
@@ -496,7 +533,5 @@ body {
   font-size: 13px;
   opacity: 0.9;
 }
-
-
 
 }

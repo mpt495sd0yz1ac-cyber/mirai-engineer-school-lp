@@ -584,9 +584,11 @@
 
 /* フォーム */
 .modal input {
-  width: 100%;
   margin-bottom: 15px;
   padding: 12px;
+  width: 90%;
+  margin: 0 auto 15px;
+  display: block;
 }
 
 /* フォームのボタン */

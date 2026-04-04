@@ -17,6 +17,8 @@ questions.forEach(q => {
 
     // クリックした項目だけ開閉
     answer.classList.toggle('open');
+    // ＋ → − 切り替え（ここに追加）
+    q.classList.toggle('active');
   });
 });
 
@@ -35,4 +37,35 @@ window.addEventListener('scroll', () => {
       el.classList.add('show');
     }
   });
+});
+
+/* =========================
+   モーダル表示
+========================= */
+const openBtn = document.querySelector('.contact-button');
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('.close');
+
+openBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.classList.add('open');
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('open');
+});
+
+/* =========================
+   フォームチェック
+========================= */
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (e) => {
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+
+  if (name.value === '' || email.value === '') {
+    e.preventDefault();
+    alert('全て入力してください');
+  }
 });

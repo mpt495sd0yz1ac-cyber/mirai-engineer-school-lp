@@ -78,7 +78,7 @@
 }
 
 /* マウスを乗せたときの色 */
-.cta-button:hover {
+.contact-button:hover {
     background: #1D4ED8;
 }
 
@@ -271,11 +271,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   position: relative;
-}
-
-/*ホバー*/
-.price-item:hover {
-  transform: translateY(-5px);
+  transition: 0.3s;
 }
 
 /* おすすめの外枠 */
@@ -464,6 +460,11 @@
   right: 20px;
 }
 
+/*-ボタン*/
+.faq-question.active::after {
+  content: "−";
+}
+
 /* 回答 */
 .faq-answer {
   display: none;
@@ -525,6 +526,11 @@
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
 }
 
 /* 小さい補足 */
@@ -532,6 +538,66 @@
   margin-top: 15px;
   font-size: 13px;
   opacity: 0.9;
+}
+
+/* モーダル背景 */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* 表示 */
+.modal.open {
+  display: flex;
+}
+
+/* 中身 */
+.modal-content {
+  background: #fff;
+  padding:40px 30px;
+  border-radius: 10px;
+  width: 420px;
+  text-align: center;
+  position: relative;
+}
+
+/*無料相談はこちらの文字*/
+.modal-content h2 {
+  margin-bottom: 25px;
+}
+
+/* 閉じるボタン */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* フォーム */
+.modal input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+}
+
+/* フォームのボタン */
+.modal button {
+  background: #2563EB;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  width: 100%;
 }
 
 }
